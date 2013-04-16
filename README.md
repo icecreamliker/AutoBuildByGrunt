@@ -26,7 +26,7 @@ npm install
 karma start
 ```
 
-##NOTICE
+##Notice
 * You should specify the environment variable(in order to launch Chrome or other browsers), under Unix/Linux:
 
 ```
@@ -39,4 +39,5 @@ export CHROME_BIN=/opt/google/chrome/chrome # replace the url with your own url
 2. Fix grunt-karma version spot
 3. Add Should Assertion 
 4. Optimise the project structure
+5. Support css minification
 
