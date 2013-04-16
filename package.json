@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "test": "grunt qunit"
+    "test": "make test"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1",
