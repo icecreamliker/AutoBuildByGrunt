@@ -20,14 +20,14 @@ If you wanna build the whole project, you can:
 npm install
 make test //or 'npm test' or 'grunt'
 ```
-Further more, if you wanna just run the karma:
+Further more, if you just wanna run the karma:
 ```
 npm install
 karma start
 ```
 
 ##NOTICE
-* You should specify the environment variable(in order launch Chrome or other browsers), under Unix/Linux:
+* You should specify the environment variable(in order to launch Chrome or other browsers), under Unix/Linux:
 
 ```
 export CHROME_BIN=/opt/google/chrome/chrome # replace the url with your own url
