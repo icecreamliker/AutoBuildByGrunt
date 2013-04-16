@@ -40,4 +40,5 @@ export CHROME_BIN=/opt/google/chrome/chrome # replace the url with your own url
 3. Add Should Assertion 
 4. Optimise the project structure
 5. Support css minification
+6. Remove jshint config file
 
