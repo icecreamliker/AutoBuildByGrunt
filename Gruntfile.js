@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     banner: '/*! <%= pkg.title %> */\n',
     // Task configuration.
     clean: {
-      files: ['dist']
+      files: ['dist', 'report', 'coverage']
     },
     concat: {
       options: {
@@ -33,7 +33,11 @@ module.exports = function(grunt) {
  //   qunit: {
  //    files: ['test/**/*.html']
  //   },
-
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js'
+      }
+    },
     jshint: {
       gruntfile: {
         options: {
@@ -43,13 +47,21 @@ module.exports = function(grunt) {
       },
       src: {
         options: {
-          jshintrc: 'src/.jshintrc'
+      //    jshintrc: 'src/.jshintrc',
+          browser: true,
+          devel: true,
+          node: true,
+          strict: false  
         },
         src: ['src/**/*.js']
       },
       test: {
         options: {
-          jshintrc: 'test/.jshintrc'
+       //   jshintrc: 'test/.jshintrc'
+          browser: true,
+          devel: true,
+          node: true,
+          strict: false
         },
         src: ['test/**/*.js']
       },
@@ -75,10 +87,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 //  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-karma-0.9.1'); 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'clean', 'concat', 'uglify']);
-
+  grunt.registerTask('default', ['jshint', 'clean', 'concat', 'uglify', 'karma']);
+//    grunt.registerTask('yaoli', ['karma']);
 };
