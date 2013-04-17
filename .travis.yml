@@ -16,6 +16,7 @@ before_script:
   - sudo apt-get update
   - sudo apt-get install google-chrome-stable
   - ls -l /opt/google/chrome/
+  - sudo apt-get install ubuntu-desktop
   - startx
 
 branches:
