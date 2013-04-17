@@ -6,7 +6,7 @@ node_js:
 #  - "0.8"
 
 env:
-  - CHROME_BIN=/opt/google/chrome/chrome
+  - CHROME_BIN=/opt/google/chrome/google-chrome
 
 before_script:
   - npm install -g grunt-cli
@@ -15,7 +15,8 @@ before_script:
   - sudo sh -c 'echo "deb http://dl.google.com/linux/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
   - sudo apt-get update
   - sudo apt-get install google-chrome-stable -f
-  - ls /opt/google/chrome/
+  - ll /opt/google/chrome/
+
 branches:
   only:
     - master
