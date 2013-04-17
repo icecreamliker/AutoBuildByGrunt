@@ -35,10 +35,8 @@ export CHROME_BIN=/opt/google/chrome/chrome # replace the url with your own url
 
 
 ##TODO
-1. Modify script in order to pass the Travis CI building
+1. Modify script in order to pass the Travis CI building(Currently remove it,replace chrome with PhantomJS)
 2. Fix grunt-karma version spot
-3. Add Should Assertion 
-4. Optimise the project structure
-5. Support css minification
-6. Remove jshint config file
+3. Optimise the project structure
+4. Support css minification
 
