@@ -10,8 +10,8 @@ env:
 
 before_script:
   - npm install -g grunt-cli
-  - apt-get update
-  - apt-get install google-chrome-stable
+  - sudo apt-get update
+  - sudo apt-get install google-chrome-stable
 
 branches:
   only:
