@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="PhantomJS 1.9 (Linux)" package="undefined" timestamp="2013-04-17T08:03:54" id="0" hostname="sde-ThinkCentre-M57" tests="6" errors="0" failures="0" time="0.003">
+  <testsuite name="PhantomJS 1.9 (Linux)" package="undefined" timestamp="2013-04-17T08:05:20" id="0" hostname="sde-ThinkCentre-M57" tests="6" errors="0" failures="0" time="0.001">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.0 Safari/534.34"/>
     </properties>
-    <testcase name="should return -1 when the value is not present" time="0.001" classname="PhantomJS 1.9 (Linux).Array #indexOf()"/>
-    <testcase name="should return -1 when the value is not present" time="0.001" classname="PhantomJS 1.9 (Linux).Array #indexOf()"/>
-    <testcase name="should be return hello world" time="0.001" classname="PhantomJS 1.9 (Linux).Hello Greeter for myapp test greet"/>
-    <testcase name="should not null" time="0" classname="PhantomJS 1.9 (Linux).Hello Greeter for myapp test greet null"/>
+    <testcase name="should return -1 when the value is not present" time="0" classname="PhantomJS 1.9 (Linux).Array #indexOf()"/>
+    <testcase name="should return -1 when the value is not present" time="0" classname="PhantomJS 1.9 (Linux).Array #indexOf()"/>
+    <testcase name="should be return hello world" time="0" classname="PhantomJS 1.9 (Linux).Hello Greeter for myapp test greet"/>
+    <testcase name="should not null" time="0.001" classname="PhantomJS 1.9 (Linux).Hello Greeter for myapp test greet null"/>
     <testcase name="should be return hello world" time="0" classname="PhantomJS 1.9 (Linux).Hello Greeter for myapp test greet"/>
     <testcase name="should not null" time="0" classname="PhantomJS 1.9 (Linux).Hello Greeter for myapp test greet null"/>
     <system-out><![CDATA[PhantomJS 1.9 (Linux) LOG: 'this is yaoli test!'

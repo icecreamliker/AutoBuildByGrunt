@@ -14,7 +14,10 @@ results
 npm-debug.log
 
 node_modules/
-report/
+
+report/*
+
 coverage/
+
 dist/
-*.DS_Store
+
