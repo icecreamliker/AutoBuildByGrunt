@@ -19,7 +19,8 @@ before_script:
   - sudo apt-get install ubuntu-desktop
   - sudo touch ~/.Xauthority
   - sudo chmod 777 ~/.Xauthority
-  - startx
+  - sudo startx
+
 
 branches:
   only:
