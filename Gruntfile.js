@@ -38,6 +38,17 @@ module.exports = function(grunt) {
         configFile: 'karma.conf.js'
       }
     },
+    less: {
+      production: {
+        options: {
+          paths: ["assets/css"],
+          yuicompress: true
+        },
+        files: {
+          "dist/index.min.css": "src/index.css"
+        }
+      }
+    },
     jshint: {
       gruntfile: {
         options: {
@@ -91,8 +102,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-karma-0.9.1'); 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'clean', 'concat', 'uglify', 'karma']);
+  grunt.registerTask('default', ['jshint', 'clean', 'concat', 'uglify', 'less', 'karma']);
 //    grunt.registerTask('yaoli', ['karma']);
 };

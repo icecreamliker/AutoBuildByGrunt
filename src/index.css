@@ -1,0 +1,10 @@
+.header {
+	border: 1px solid #ccc;
+	color: #dedede;
+}
+
+.col {
+	width: 100px;
+	margin: 0px auto;
+	height: 200px;
+}
