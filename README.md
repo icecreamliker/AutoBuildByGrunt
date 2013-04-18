@@ -9,8 +9,10 @@ Build project for UnitedStack
 
 * Support project building
 * Support **Mocha**
-* Support **Chai** (and **Should** on the way)
+* Support **Chai**
+* Supprot **Should**
 * Support **Karma**
+* Support **PhantomJS**
 * Support other common building features, like jshint, minify, uglify...
 
 ##Usage
@@ -35,8 +37,9 @@ export CHROME_BIN=/opt/google/chrome/chrome # replace the url with your own url
 
 
 ##TODO
-1. Modify script in order to pass the Travis CI building(Currently remove it,replace chrome with PhantomJS)
+1. Modify script in order to pass the Travis CI building(Currently remove it,replace chrome with PhantomJS)   FIXED
 2. Fix grunt-karma version spot
 3. Optimise the project structure
 4. Support css minification
+5. Support website capturing
 
