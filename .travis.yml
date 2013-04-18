@@ -9,7 +9,7 @@ env:
   - CHROME_BIN=/opt/google/chrome/chrome
 
 before_script:
-  - npm uninstall -g phantomjs
+  - phantomjs --version
   - npm install -g grunt-cli
   - lsb_release -a
 #  - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
